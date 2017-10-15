@@ -1,11 +1,11 @@
-"use strict"
+'use strict';
 
-const got = require('got')
+const got = require('got');
 
 const ping = (context, callback) => {
 	got(context)
 		.then(x => callback(x.statusCode + ' ' + x.statusMessage))
-		.catch(err => callback(err))
-}
+		.catch(err => callback(err));
+};
 
-module.exports = ping
+module.exports = ping;
