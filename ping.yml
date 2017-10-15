@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  ping:
+    lang: node
+    handler: ./ping
+    image: aafrey/ping
